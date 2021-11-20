@@ -1,0 +1,81 @@
+Работа с gitbash
+
+1. посмотреть где я => pwd //Mac/Home/Desktop/HW
+
+2. Создаем папку -> mkdir HW1
+
+3. Переходим в папку  HW1 -> cd HW1
+
+4. Cоздаем 3 папки в папке HW1 -> mkdir test1 test2 test3
+
+5. Зайдем в любую папку -> cd test1
+
+6. Создаем 5 файлов (3 txt 2 json) => 
+touch try.txt
+touch try1.txt
+touch try2.txt
+touch false.json
+touch false2.json
+7. Создать 3 папки(папка внутри папки внутри папки) -> mkdir -p  dz1/dz2/dz3
+
+8. Вывести список  содержимого папки -> ls -la
+
+9.Открываю текстовый файл -> vim false.json нажал кнопку "I" для редактирования файла
+
+10. Написал текст в данный файл =>3
+ {  "name": "Igor",cd
+        "surname": "Nadzelskyi",
+        "roles": "student"
+        "courses":"QA"
+}
+
+11.Сохраняю то что написал -> кнопка Esc для выхода, пишу   :wq   жму enter
+
+12.Вернулся в папку на уровень выше =>  сd ..
+
+13.Переместил два файла, которые создал в любую другую папку -> mv try.txt
+и указываем папку куда хотим переместить (dz1) и второй файл -> mv false.json dz1
+//Mac/Home/Desktop/HW/HW1/test1/dz1
+
+14.Скопировать 2 файла в другую папку =>  сp false.json dz2    перемещаю в папку котороя нахидится 
+//Mac/Home/Desktop/HW/HW1/test1/dz2  в папку dz2 
+
+15.Поиск файла по имени => сначала нажал общий поиск всех сувществующих файлов find 
+потом  find -name try1.txt подтвердило что он у меня есть 
+./test1/try1.txt
+
+16. посмотреть содержимое в реальном времени => grep name try.txt  или  tail -F try.txt
+
+
+
+17.вывести несколько первых строк из текстового файла(взял файл  try.txt) его текст
+Hello world
+My name Igor
+
+пишу команду  =>   cat try.txt | sed -n 1,2p     вывело 1 и 2 строку
+
+18. вывести несколько последних строк из текстового файла =>
+
+аналогичная командa =>   cat try.txt | sed -n 3,4p
+
+19.просмотреть содержимое длинного файла =>  less try.txt
+могу прокручивать файл по страницам клавишами "w z" для выхода с режима нажимаю "q"
+
+20.Вывод даты и времени => date    Sat Nov 20 11:30:29     2021
+
+21.Отправить http запрос на сервер =>
+ curl -i -X OPTIONS http://162.55.220.72:5005/terminal-hw-request 
+ получил результат
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Allow: GET, HEAD, OPTIONS
+Content-Length: 0
+Server: Werkzeug/2.0.1 Python/3.8.10
+Date: Sat, 20 Nov 2021 14:31:05 GMT
+
+
+
+
+
+
+
