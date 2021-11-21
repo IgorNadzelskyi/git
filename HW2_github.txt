@@ -3,46 +3,17 @@
 2.Добавить файл под гит =>  git add new.json
 
 3.Закоммитить файл =>  git commit -m "Create new.json"
-Ответ терминала успешен
-[main c76f3ce] Create new.json
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 new.json
 
 4.Отправить файл на внешний GitHub репозиторий => git puch
-Отправка успешна 
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 2 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 268 bytes | 53.00 KiB/s, done.
-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/IgorNadzelskyi/git.git
-   c76d626..c76f3ce  main -> main
+
 
 5.Создать файлы new2.json, new2.xml, new2.txt =>  touch new2.json new2.xml new2.txt
 
 6.Добавить файлы под гит => git add new2.json new2.xml new2.txt
 
 7. Закоммитить файлы =>  git commit -m "Create new2.json new2.xml new2.txt"
-Ответ терминала
-[main 3d7b59f] Create new2.json new2.xml new2.txt
- 3 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 new2.json
- create mode 100644 new2.txt
- create mode 100644 new2.xml
 
 8. Отправить файлы на внешний GitHub репозиторий => git push
- Ответ об успешной отправке
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 2 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 293 bytes | 48.00 KiB/s, done.
-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/IgorNadzelskyi/git.git
-   c76f3ce..3d7b59f  main -> main
 
 9.Отредактировать содержание файла “new2.txt” -
  написать информацию о себе (ФИО, возраст, количество домашних животных,
@@ -56,7 +27,6 @@ To https://github.com/IgorNadzelskyi/git.git
 
 11.Добавить и закоммитить “new2.txt” одной строчкой. => 
 git add new2.txt && git commit -m "Create full new2.txt"
-Успешно добавлен и закоммичен
 
 12.Добавить и закоммитить “new2.json” одной строчкой.
  => git add new2.json && git commit -m "Create full new2.json"
@@ -64,15 +34,7 @@ git add new2.txt && git commit -m "Create full new2.txt"
 
 13.Отправить изменения на внешний репозиторий. => git push
 Изменение успешно отправлены. 
-Ответ
-Enumerating objects: 9, done.
-Counting objects: 100% (8/8), done.
-Delta compression using up to 2 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (6/6), 725 bytes | 145.00 KiB/s, done.
-Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-To https://github.com/IgorNadzelskyi/git.git
+
 
 14.Отредактировать содержание файла “new2.xml” -
  написать информацию о себе (ФИО, возраст, количество домашних животных, 
@@ -101,10 +63,7 @@ To https://github.com/IgorNadzelskyi/git.git
 
 21.Синхронизировать внешний и локальный репозитории => git pull
 Синхронизация успешна
- Fast-forward
- new3.txt | 5 +++++
- 1 file changed, 5 insertions(+)
- create mode 100644 new3.txt
+ 
 
 22.Отредактировать в веб интерфейсе содержание файла “new2.json” 
 - добавить информацию о своих предпочтениях 
@@ -115,10 +74,6 @@ To https://github.com/IgorNadzelskyi/git.git
 
 24.Синхронизировать внешний и локальный репозитории => git pull измемены
 
-Fast-forward
- new2.json | 8 +++++++-
- 1 file changed, 7 insertions(+), 1 deletion(-)
-
  25.Отредактировать в веб интерфейсе содержание файла “new2.xml” - 
 добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал,
  любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
@@ -127,18 +82,6 @@ Fast-forward
  26. Сделать Commit changes (сохранить) изменения на веб интерфейсе. => жму commit chages
 
  27. Синхронизировать внешний и локальный репозитории  => git pull измемены
-Ответ
-remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), 836 bytes | 33.00 KiB/s, done.
-From https://github.com/IgorNadzelskyi/git
-   ca140b5..85f6564  main       -> origin/main
-Updating ca140b5..85f6564
-Fast-forward
- new2.xml | 13 +++++++++----
- 1 file changed, 9 insertions(+), 4 deletions(-)
 
 
 
