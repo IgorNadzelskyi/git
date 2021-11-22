@@ -1,0 +1,15 @@
+1.ID
+2.Summary
+3.Project
+4.Module
+5.Version
+6.Severity
+7.Rriority
+8.Status
+9.Author
+10.Assigned to
+11.ОС / Сервис Пак и т.д. / Браузера + версия 
+12.Steps to Reproduce
+13.actual result
+14.Expected result
+15.Attachment
